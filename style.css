@@ -1,0 +1,54 @@
+body{
+  background-image: url("background.jpg");
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+  background-size: cover;
+}
+
+.message{
+  margin-bottom: 20px;
+}
+.next{
+  font-size: 1em;
+  background-color: red;
+  width: 300px;
+  margin: 20px 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.btn{
+  display: inline-block;
+  padding: 5px;
+  font-family: sans-serif;
+  border-radius: 10px;
+  font-size: 1.5em;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.answer{
+  border: 1px solid gray;
+}
+
+.answer:hover{
+  background-color: beige;
+  border: 1px solid red;
+}
+
+.question{
+  display: block;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.score{
+  font-size: 2em;
+}
+
+.end{
+  display: block;
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: red;
+}
