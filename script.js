@@ -20,7 +20,7 @@ function createQuestion(){
   nx.style.display = "none";
   if(game.val+1 > game.total){
     message.textContent = 'あなたのスコアは '+game.score+' / '+game.total+' !';
-    if(game.score >= 7){
+    if(game.score >= 6){
       output.style.color = "green";
       output.textContent = "あなたは立派なバンド経験者です！";
       nx.textContent = 'もう一度回答する';
@@ -69,7 +69,7 @@ function checker(e){
   const selAns = document.querySelectorAll('.answer');
   selAns.forEach(function(ele){
     ele.classList.remove('answer');
-    ele.style.color = "#ddd";
+    ele.style.color = "gray";
     ele.style.cursor = 'not-allowed';
     ele.removeEventListener('click',checker);
   })
